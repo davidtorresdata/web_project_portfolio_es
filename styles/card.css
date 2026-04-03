@@ -1,0 +1,53 @@
+/* Tarjetas de proyecto: preview superior y contenido inferior */
+.project-card {
+  display: grid;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--card);
+  border: 1px solid rgba(82, 96, 109, 0.16);
+  box-shadow: var(--shadow);
+  scroll-snap-align: start;
+}
+
+.project-card__preview {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: linear-gradient(135deg, #f9dec9 0%, #f6f0ea 100%);
+}
+
+.project-card__body {
+  display: grid;
+  gap: 1rem;
+  padding: 1.4rem;
+}
+
+.project-card__body h3 {
+  font-size: 1.25rem;
+}
+
+.project-card__body p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* Enlace con icono de GitHub y feedback visual */
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: fit-content;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+  color: var(--accent-dark);
+  background: rgba(217, 119, 6, 0.1);
+  font-weight: 700;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease;
+}
+
+.project-link img {
+  width: 1.15rem;
+  height: 1.15rem;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page de presentacion para un Data Engineer con experiencia en pipelines, cloud y analitica."
+    />
+    <title>Data Engineer | Portfolio</title>
+    <link rel="stylesheet" href="./styles/card.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <!-- Hero principal: incluye foto, nombre, resumen profesional y CTA editables -->
+    <header class="hero-shell">
+      <nav class="hero-nav is-scrolled">
+        <img src="./images/vscode.svg" alt="">
+        <ol class="hero-nav__links">
+          <li><a class="hero-nav__contact" href="">Contacto</a></li>
+          <li><a class="hero-nav__projects" href="">Projectos</a></li>
+        </ol>
+      </nav>
+      
+      <section class="hero-card" aria-labelledby="hero-title">
+       
+        <div class="hero-card__content">
+           <h1>¡Hola, bienvenido a mi portafolio!</h1>
+          <!-- Cambia este nombre por tu nombre real -->
+          <p class="hero-card__eyebrow"><img src="./images/location.svg" alt="">Colombia, Bogota</p>
+          <h2 id="hero-title">David Torres</h1>
+
+          <!-- Reemplaza este parrafo por tu resumen profesional -->
+          <p class="hero-card__description">
+            Ingeniero de Sistemas altamente analítico con más de 6 años de experiencia, 
+            especializado en los sectores de Servicios Financieros y Telecomunicaciones. 
+            Experiencia demostrada en la arquitectura de pipelines ETL, la automatización 
+            de flujos de trabajo de datos y la gestión de grandes conjuntos de datos en 
+            entornos GCP/AWS. Sólido dominio de Python, SQL y Spark para el procesamiento de datos, 
+            con especial atención a la calidad de datos, la gobernanza y una arquitectura 
+            escalable en la nube.
+          </p>
+
+          <!-- Botones de accion: resume, GitHub y salto al footer -->
+          <div class="hero-card__actions">
+            <a class="button button--primary" href="./resume-demo.pdf" download>
+              Descargar Resume
+            </a> 
+            <a
+              class="button button--ghost"
+              href="https://github.com/alexmartinez-data"
+              target="_blank"
+              rel="noreferrer"
+            >
+            <img src="./images/github.svg" alt="">
+               Ver GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Cambia esta imagen por tu fotografia profesional -->
+        <figure class="hero-card__media">
+          <img
+            src="./images/ProfilePic.jpg"
+            alt="Foto de perfil de Alex Martinez"
+          />
+        </figure>
+      </section>
+    </header>
+
+    <main>
+      <!-- Carrusel horizontal de tecnologias: cada item incluye icono y nombre -->
+      <section class="section skills" aria-labelledby="habilidades">
+        <div class="section__heading">
+          <p class="section__eyebrow">Stack profesional</p>
+          <h2 id="habilidades">Habilidades y herramientas</h2>
+        </div>
+
+        <div class="ticker" aria-label="Tecnologias principales">
+          <div class="ticker__track">
+            <article class="tech-pill">
+              <img src="./images/python.svg" alt="Python" />
+              <span>Python</span>
+            </article>
+            <article class="tech-pill">
+              <img src="./images/github.svg" alt="GitHub" />
+              <span>GitHub</span>
+            </article>
+            <article class="tech-pill">
+              <img src="./images/aws.svg" alt="AWS" />
+              <span>AWS</span>
+            </article>
+            <article class="tech-pill">
+              <img src="./images/databricks.svg" alt="Databricks" />
+              <span>Databricks</span>
+            </article>
+            <article class="tech-pill">
+              <img src="./images/html.svg" alt="HTML" />
+              <span>HTML</span>
+            </article>
+            <article class="tech-pill">
+              <img src="./images/javascript.svg" alt="JavaScript" />
+              <span>JavaScript</span>
+            </article>
+            <article class="tech-pill">
+              <img src="./images/java.svg" alt="Java" />
+              <span>Java</span>
+            </article>
+
+            <!-- Duplicado visual para animacion continua del ticker -->
+            <article class="tech-pill" aria-hidden="true">
+              <img src="./images/python.svg" alt="" />
+              <span>Python</span>
+            </article>
+            <article class="tech-pill" aria-hidden="true">
+              <img src="./images/github.svg" alt="" />
+              <span>GitHub</span>
+            </article>
+            <article class="tech-pill" aria-hidden="true">
+              <img src="./images/aws.svg" alt="" />
+              <span>AWS</span>
+            </article>
+            <article class="tech-pill" aria-hidden="true">
+              <img src="./images/databricks.svg" alt="" />
+              <span>Databricks</span>
+            </article>
+            <article class="tech-pill" aria-hidden="true">
+              <img src="./images/html.svg" alt="" />
+              <span>HTML</span>
+            </article>
+            <article class="tech-pill" aria-hidden="true">
+              <img src="./images/javascript.svg" alt="" />
+              <span>JavaScript</span>
+            </article>
+            <article class="tech-pill" aria-hidden="true">
+              <img src="./images/java.svg" alt="" />
+              <span>Java</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos destacados en scroll horizontal para desktop y mobile -->
+      <section class="section projects" id="proyectos" aria-labelledby="proyectos-title">
+        <div class="section__heading section__heading--split">
+          <div>
+            <p class="section__eyebrow">Portafolio reciente</p>
+            <h2 id="proyectos-title">Proyectos destacados</h2>
+          </div>
+
+          <!-- Controles manuales del carrusel para navegar entre proyectos -->
+          <div class="project-controls" aria-label="Controles del portafolio">
+            <button
+              class="carousel-button"
+              type="button"
+              data-direction="left"
+              data-target="project-rail"
+              aria-label="Ver proyectos anteriores"
+            >
+              &#8592;
+            </button>
+            <button
+              class="carousel-button"
+              type="button"
+              data-direction="right"
+              data-target="project-rail"
+              aria-label="Ver proyectos siguientes"
+            >
+              &#8594;
+            </button>
+          </div>
+        </div>
+
+        <div class="project-rail" id="project-rail">
+          <!-- Card de proyecto 1: cambia preview, descripcion y URL -->
+          <article class="project-card">
+            <img
+              class="project-card__preview"
+              src="./images/project-pipeline.svg"
+              alt="Vista previa de dashboard de pipeline de datos"
+            />
+            <div class="project-card__body">
+              <h3>Pipeline de Ingestion Retail</h3>
+              <p>
+                Plataforma ETL para centralizar ventas, inventario y catalogo en
+                batches incrementales con monitoreo de calidad.
+              </p>
+              <a
+                class="project-link"
+                href="https://github.com/alexmartinez-data/retail-data-pipeline"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="./images/github-mark.svg" alt="" aria-hidden="true" />
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Card de proyecto 2 -->
+          <article class="project-card">
+            <img
+              class="project-card__preview"
+              src="./images/project-analytics.svg"
+              alt="Vista previa de arquitectura para lakehouse analitico"
+            />
+            <div class="project-card__body">
+              <h3>Lakehouse para Analitica Comercial</h3>
+              <p>
+                Solucion montada sobre Databricks y AWS para transformar fuentes
+                dispersas en modelos listos para BI y ciencia de datos.
+              </p>
+              <a
+                class="project-link"
+                href="https://github.com/alexmartinez-data/lakehouse-analytics"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="./images/github-mark.svg" alt="" aria-hidden="true" />
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Card de proyecto 3 -->
+          <article class="project-card">
+            <img
+              class="project-card__preview"
+              src="./images/project-monitoring.svg"
+              alt="Vista previa de panel de monitoreo de jobs"
+            />
+            <div class="project-card__body">
+              <h3>Observabilidad de Jobs ETL</h3>
+              <p>
+                Sistema de alertas y trazabilidad para detectar fallos en flujos
+                criticos, reducir tiempos de respuesta y asegurar SLAs.
+              </p>
+              <a
+                class="project-link"
+                href="https://github.com/alexmartinez-data/etl-observability"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="./images/github-mark.svg" alt="" aria-hidden="true" />
+                GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer con datos de contacto dummy listos para reemplazar -->
+    <footer class="footer" id="contacto">
+      <div class="footer__content">
+        <div>
+          <p class="footer__eyebrow">Contacto directo</p>
+          <h2>Trabajemos juntos</h2>
+        </div>
+
+        <div class="footer__details">
+          <!-- Cambia estos valores por tus datos reales -->
+          <a href="tel:+15550001234">Telefono: +1 (555) 000-1234</a>
+          <a href="mailto:alex.martinez.data@example.com">
+            Email: alex.martinez.data@example.com
+          </a>
+          <a
+            href="https://www.linkedin.com/in/alex-martinez-data/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn: linkedin.com/in/alex-martinez-data
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
